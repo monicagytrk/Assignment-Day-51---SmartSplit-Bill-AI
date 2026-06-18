@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  splitsmart:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - GROQ_API_KEY=INSERT_YOUR_API_KEY
+    restart: unless-stopped
